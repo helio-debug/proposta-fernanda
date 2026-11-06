@@ -1,0 +1,32 @@
+/* Tema claro da proposta: fundo branco, destaque em azul Artemis */
+:root{--bg:#FFFFFF;--surface:#F4F4F5;--surface-2:#EDEDEF;--fg:#26262A;--title:#09090B;--muted:#6B6B70;--line:#E2E2E5;--accent:#005EFF;--accent-soft:rgba(0,94,255,.08);--ph:#F5A500}
+.h1 .g,.h2 .g{color:var(--accent)}
+.gantt .bar.gray{background:#D4D4D8}
+.gantt .bar.soft{background:rgba(0,94,255,.10);border-color:rgba(0,94,255,.5)}
+.capa-art i{background:#E2E2E5}
+.wk-strip span.done::before{background:rgba(0,94,255,.35)}
+.deliv{background:var(--accent-soft)!important;border-color:rgba(0,94,255,.25)!important}
+.hud{color:#8A8A8F;background:rgba(0,0,0,.06)}
+.phones{display:flex;gap:44px;justify-content:center;align-items:flex-start;margin-top:8px}
+.phones figure{display:flex;flex-direction:column;align-items:center;gap:14px}
+.phones img{height:540px;width:auto;border-radius:40px;border:10px solid #09090B;box-shadow:0 24px 50px rgba(9,9,11,.18)}
+.phones figcaption{font-family:var(--font-tag);font-style:italic;font-size:28px;color:var(--muted)}
+
+.cases{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line)}
+.case{padding:56px 32px 0 0;display:flex;flex-direction:column;gap:10px}
+.case+.case{padding-left:32px;border-left:1px solid var(--line)}
+.case .av{width:116px;height:116px;border-radius:50%;object-fit:cover;border:1px solid var(--line);margin-bottom:22px}
+.case .num{font-family:var(--font-title);font-weight:700;font-size:66px;line-height:1;color:var(--accent);white-space:nowrap}
+.case .num small{display:block;font-family:var(--font);font-weight:400;font-size:26px;color:var(--muted);margin-top:8px}
+.case h3{font-family:var(--font-title);font-weight:600;font-size:34px;color:var(--title);line-height:1.1;margin-top:18px}
+.case .u{font-size:22px;color:var(--accent);font-weight:500}
+.case p{font-size:23px;line-height:1.4;color:var(--muted);margin-top:6px}
+
+.bios{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.bio{display:flex;gap:40px;padding:60px 56px 0 0;align-items:flex-start}
+.bio+.bio{padding-left:56px;border-left:1px solid var(--line)}
+.bio .av{width:170px;height:170px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--line)}
+.bio .av.logo{object-fit:contain;padding:34px;background:var(--surface)}
+.bio h3{font-family:var(--font-title);font-weight:600;font-size:50px;color:var(--title);line-height:1.05}
+.bio .u{display:block;font-size:26px;color:var(--accent);font-weight:500;margin:10px 0 22px}
+.bio p{font-size:30px;line-height:1.45;color:var(--fg)}
